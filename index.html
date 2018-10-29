@@ -1,0 +1,131 @@
+
+<html>
+<head>
+<style>
+body{
+	background: url(gdsaintek.jpg);
+	background-size:100%;
+	background-position:center;
+	font-family: sans-serif;
+}
+.wrap{
+		width:600px; 
+		margin:auto; 
+		background:#00adee; 
+		margin-top:150px; 	
+		padding:10px;		
+}		
+
+.avatar{
+	width:100px;
+	height:100px;
+	border-radius: 50%;
+	position: absolute;
+	top: 70px;
+	left: calc(49% - 50px);
+	padding:10px;
+}
+	
+form{
+	padding:10px;
+	font-family:arial; 
+	border:1px dotted white;
+}
+	
+h1{	
+	width:85%;
+	text-align:center;
+	background:red;
+	color:white;
+	padding:10px;
+	border-radius:10px;
+}
+input{
+	padding:10px;
+	width:78%;
+	margin:10px;
+	border-radius:5px;
+	border:none;
+}
+input[type=submit]{
+	width:75%;
+	background:red;
+	cursor:pointer;
+	font-size:18px;
+	font-weight:bold;
+	color:white;
+	text-align:center;
+}
+input[type=submit]:hover{
+	background:yellow;
+}
+a{
+	width:75%;
+	cursor:pointer;
+	font-size:18px;
+	font-weight:bold;
+	color:white;
+	text-align:center;
+}
+a :hover{
+	background:yellow;
+}	
+select{
+	padding:10px;
+	width:85%;
+	margin:10px;
+	border-radius:5px;
+	border:none;
+}
+	</style>
+	<title>Data</title>
+</head>
+<body>
+	<div class ="wrap"><center>
+		<img src="avatar.png" class="avatar">
+		<h1>Input Data</h1>
+		<form action = "" method = "post">
+		<table>
+		<tr>
+		<td>Nomor Seri Sertifikat</td>
+		<td><input type="text" class="input-field" name="noseri" value="" /></td>
+		</tr>
+		<tr>
+		<td>Nomor Sertifikat</td>
+		<td><input type="text" class="input-field" name="nosert" value="" /></td>
+		</tr>
+		<tr>
+		<td>Tanggal Dibuat</td>
+		<td><input type="date" class="input-field" name="tglbuat" value="" /></td>
+		</tr>
+		<tr>
+		<td>NIM</td>
+		<td>: <select name="nim" class="select-field">
+			<option value="" selected>Pilih NIM</option>
+
+		</select>
+		</td>
+		</tr>
+
+		<td>Pejabat</td>
+		<td>: <select name="idpejabat" class="select-field">
+			<option value="" selected>Pilih Pejabat</option>
+
+
+			</select>
+			</td>
+			</tr>
+			<tr>
+		<tr>
+		<td>
+		<br>
+		<input type="submit" name="simpan" value="Cetak Sertifikat"/>
+		<a href = "logout.php">Logout</a>
+		<br><br>
+		</table>
+		</td>
+   		</tr> 
+		</form>
+	</div>
+</body>
+</html>
